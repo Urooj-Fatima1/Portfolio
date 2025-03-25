@@ -140,5 +140,9 @@ window.onscroll = function () {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
+document.querySelector(".contact-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevents page reload
+    alert("Your message has been sent successfully!"); // Show a message
+});
 
 
